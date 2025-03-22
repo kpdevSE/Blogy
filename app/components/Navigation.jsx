@@ -8,9 +8,10 @@ import {
   useUser,
 } from "@clerk/nextjs";
 import { ModeToggle } from "./ModeToggle";
-import { PlusIcon } from "lucide-react";
+import { Paperclip, PlusIcon } from "lucide-react";
 import Link from "next/link";
 import { DrawerDemo } from "./Sidebar";
+import AddABlog from "./AddaBlog";
 
 export default function NavigationBar() {
   return (
@@ -30,12 +31,13 @@ export default function NavigationBar() {
         </SignedOut>
 
         <SignedIn>
-          <Link href={"/pages/Add-Blogs"}>
+          <Link href={"/pages/Blogs"}>
             <Button className="cursor-pointer">
-              <PlusIcon size={15} />
-              Add a Blog
+              <Paperclip />
+              Blogs
             </Button>
           </Link>
+
           <UserButton />
         </SignedIn>
       </div>
