@@ -1,5 +1,6 @@
 "use client";
 
+import { Pen } from "lucide-react";
 import { useState } from "react";
 import { BarLoader } from "react-spinners";
 
@@ -12,9 +13,11 @@ export default function BlogDetailsPage() {
       ) : (
         <div>
           <h1 className="text-4xl font-bold">Blog 01</h1>
-          <p className="text-lg font-semibold mt-6">By Kanishka Pasindu</p>
+          <p className="text-lg font-semibold mt-6 flex items-center  gap-1">
+            <Pen className="font-bold" size={15} /> By Kanishka Pasindu
+          </p>
           <div className="flex items-center justify-center flex-col ">
-            <h2 className="text-2xl mt-10 font-semibold">Life Growth Tips</h2>
+            <h2 className="text-2xl mt-10 font-bold">Life Growth Tips</h2>
             <p className="mt-6">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
               numquam laborum accusantium quod eveniet fugiat nesciunt qui
